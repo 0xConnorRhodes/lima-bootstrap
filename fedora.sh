@@ -17,4 +17,5 @@ sudo dnf install -y \
 	zoxide \
 	neovim \
 	ripgrep \
-	toolbox
+	toolbox \
+	htop
