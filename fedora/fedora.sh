@@ -21,7 +21,8 @@ sudo dnf install -y \
 	htop \
 	tealdeer \
 	git \
-	bat
+	bat \
+	tree
 
 tldr --update
 

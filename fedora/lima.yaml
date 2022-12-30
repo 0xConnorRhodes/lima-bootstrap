@@ -33,6 +33,7 @@ mounts:
   # Configure the mountPoint inside the guest.
   # 🟢 Builtin default: value of location
   writable: true
+- location: "/Volumes/enc"
 
 mountType: virtiofs
 
