@@ -20,7 +20,8 @@ sudo dnf install -y \
 	toolbox \
 	htop \
 	tealdeer \
-	git
+	git \
+	bat
 
 tldr --update
 
