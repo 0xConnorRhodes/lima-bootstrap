@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
-sudo dnf update -ydfasdf
+sudo dnf update -y
 
 
 sudo dnf install -y \
-	toolbox \
+	toolbox
 
 
 # create an initial toolbox to pull the base cloud image

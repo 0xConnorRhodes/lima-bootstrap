@@ -20,7 +20,6 @@ cpus: null
 # Memory size
 # 🟢 Builtin default: "4GiB"
 memory: null
-
 # Disk size
 # 🟢 Builtin default: "100GiB"
 disk: null
@@ -106,6 +105,14 @@ containerd:
 #  - location: "~/Downloads/nerdctl-full-X.Y.Z-linux-amd64.tar.gz"
 #    arch: "x86_64"
 #    digest: "sha256:..."
+
+provision:
+- mode: user
+  script: |
+    #!/bin/bash
+    ln -s /Users/c.rhodes/code/lima-bootstrap/alpine /home/lima.linux/bootstrap
+    ln -s /Users/c.rhodes /home/lima.linux/host
+    EOF
 
 # Provisioning scripts need to be idempotent because they might be called
 # multiple times, e.g. when the host VM is being restarted.
