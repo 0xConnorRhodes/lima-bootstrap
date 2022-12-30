@@ -18,4 +18,7 @@ sudo dnf install -y \
 	neovim \
 	ripgrep \
 	toolbox \
-	htop
+	htop \
+	tealdeer
+
+tldr --update
