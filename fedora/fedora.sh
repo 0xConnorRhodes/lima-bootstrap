@@ -19,6 +19,10 @@ sudo dnf install -y \
 	ripgrep \
 	toolbox \
 	htop \
-	tealdeer
+	tealdeer \
+	git
 
 tldr --update
+
+# symlink the home directory on the host
+ln -s /Users/c.rhodes/ ~/host
