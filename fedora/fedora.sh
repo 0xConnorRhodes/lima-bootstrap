@@ -28,3 +28,8 @@ tldr --update
 
 # symlink the home directory on the host
 ln -s /Users/c.rhodes/ ~/host
+
+# disable selinux (needed for nix)
+sudo sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config
+
+# install nix, see https://nixos.org/download.html
